@@ -1,0 +1,48 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #main-image {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: auto;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border 0.3s;
+    }
+
+    .thumbnail:hover {
+      border: 2px solid #007BFF;
+    }
+
+    @media (max-width: 600px) {
+      .thumbnail {
+        width: 70px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      #main-image {
+        max-width: 100%;
+      }
+      .thumbnail {
+        width: 50px;
+      }
+    }
